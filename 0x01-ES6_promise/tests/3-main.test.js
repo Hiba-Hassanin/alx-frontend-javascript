@@ -26,3 +26,4 @@ test('handleProfileSignup logs error message on failure', () => {
     consoleSpy.mockRestore();
   });
 });
+

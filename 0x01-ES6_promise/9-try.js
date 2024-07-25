@@ -1,14 +1,15 @@
 // 9-try.test.js
 
-import guardrail from './9-try';
-import divideFunction from './8-try'; // Assuming this function is already implemented
+export default function guardrail(mathFunction) {
+  const queue = [];
 
-test('guardrail processes successful function call', () => {
-  const result = guardrail(() => divideFunction(10, 2));
-  expect(result).toEqual([5, 'Guardrail was processed']);
-});
+  try {
+    queue.push(mathFunction());
+  } catch (err) {
+    queue.push(String(err));
+  } finally {
+    queue.push('Guardrail was processed');
+  }
 
-test('guardrail processes function call with error', () => {
-  const result = guardrail(() => divideFunction(10, 0));
-  expect(result).toEqual(['Error: cannot divide by 0', 'Guardrail was processed']);
-});
+  return queue;
+}

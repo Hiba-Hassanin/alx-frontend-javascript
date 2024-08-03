@@ -5,7 +5,6 @@
  * @param {Array} students - The list of student objects.
  * @returns {Array} An array of student ids or an empty array if input is not an array.
  */
-
  export default function getListStudentIds(students) {
    if (!Array.isArray(students)) {
      return [];

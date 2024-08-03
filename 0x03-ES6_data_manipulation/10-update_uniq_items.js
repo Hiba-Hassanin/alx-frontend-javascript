@@ -6,15 +6,15 @@
  * @returns {Map} The updated map.
  * @throws {Error} Throws an error if the argument is not a map.
  */
- export default function updateUniqueItems(map) {
-   if (map instanceof Map) {
-     for (const [key, value] of map) {
-       if (value === 1) {
-         map.set(key, 100);
-       }
-     }
-   } else {
-     throw new Error('Cannot process');
-   }
-   return map;
- }
+export default function updateUniqueItems(map) {
+  if (map instanceof Map) {
+    for (const [key, value] of map) {
+      if (value === 1) {
+        map.set(key, 100);
+      }
+    }
+  } else {
+    throw new Error('Cannot process');
+  }
+  return map;
+}

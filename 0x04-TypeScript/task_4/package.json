@@ -1,11 +1,10 @@
 {
-  "name": "task_2",
+  "name": "task_4",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -13,9 +12,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.4.0",
     "@typescript-eslint/parser": "^2.4.0",
-    "typescript": "^3.6.4",
-    "jest": "24.9.0",
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "typescript": "^3.6.4"
   }
 }
+

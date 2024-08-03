@@ -8,7 +8,6 @@
  * @returns {DataView} A DataView of the ArrayBuffer with the Int8 value set.
  * @throws {Error} Throws an error if the position is outside the range of the ArrayBuffer.
  */
-
  export default function createInt8TypedArray(length, position, value) {
    const buffer = new ArrayBuffer(length);
    const dataView = new DataView(buffer);

@@ -7,7 +7,6 @@
  * @param {Array} newGrades - The array of objects with studentId and grade.
  * @returns {Array} An array of student objects with updated grades.
  */
-
  export default function updateStudentGradeByCity(students, city, newGrades) {
    const cityStudents = students.filter((student) => student.location === city);
    return cityStudents.map((student) => {
